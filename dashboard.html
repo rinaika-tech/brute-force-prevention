@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SecureGuard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <div class="dashboard-brand">
+                <span>🛡️</span>
+                <div>
+                    <h2>SecureGuard</h2>
+                    <p>Security Management System</p>
+                </div>
+            </div>
+
+            <button id="logoutButton" class="logout-button">
+                Logout ↗
+            </button>
+        </header>
+
+        <main class="dashboard-content">
+
+            <div class="welcome-section">
+                <div>
+                    <p class="welcome-label">DASHBOARD</p>
+                    <h1>Selamat Datang, <span id="username">Admin</span>!</h1>
+                    <p>Anda berhasil masuk ke sistem keamanan.</p>
+                </div>
+                <div class="welcome-icon">👋</div>
+            </div>
+
+            <div class="success-banner">
+                <div class="success-icon">✓</div>
+                <div>
+                    <strong>Login Berhasil!</strong>
+                    <p>Autentikasi berhasil. Session pengguna telah aktif.</p>
+                </div>
+            </div>
+
+            <h3 class="section-title">Security Overview</h3>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-icon blue">🔐</div>
+                    <p>Status Autentikasi</p>
+                    <h3>Authenticated</h3>
+                    <span class="status-text">● Aktif</span>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-icon green">🛡️</div>
+                    <p>Brute Force Protection</p>
+                    <h3>Enabled</h3>
+                    <span class="status-text">● Terlindungi</span>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-icon purple">🔑</div>
+                    <p>Password Security</p>
+                    <h3>Bcrypt</h3>
+                    <span class="status-text">● Aktif</span>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-card-icon orange">⏱️</div>
+                    <p>Account Lockout</p>
+                    <h3>15 Minutes</h3>
+                    <span class="status-text">● Diaktifkan</span>
+                </div>
+
+            </div>
+
+            <div class="information-card">
+                <h3>Informasi Sistem</h3>
+
+                <div class="info-row">
+                    <span>Username</span>
+                    <strong id="accountName">Admin</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Login Status</span>
+                    <strong class="green-text">Berhasil</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Session</span>
+                    <strong>Active</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Security System</span>
+                    <strong>Brute Force Prevention</strong>
+                </div>
+            </div>
+
+            <div class="protection-card">
+                <span>💡</span>
+                <div>
+                    <strong>Security Information</strong>
+                    <p>
+                        Sistem ini menggunakan pembatasan percobaan login,
+                        account lockout, rate limiting, bcrypt password hashing,
+                        dan session authentication untuk meningkatkan keamanan.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="dashboard-footer">
+            © 2026 SecureGuard | Brute Force Prevention System
+        </footer>
+
+    </div>
+
+    <script src="/dashboard.js"></script>
+</body>
+
+</html>
